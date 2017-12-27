@@ -28,3 +28,6 @@ jupyter
 quandl
 dask[complete]
 blaze
+flatten_json
+psutil
+simplejson
