@@ -1,6 +1,9 @@
-FROM python:3-onbuild
+FROM turbulent/polyglot-base
 
 RUN python -c "import nltk; nltk.download('punkt')"
+RUN python -c "import nltk; nltk.download('wordnet')"
+RUN python -c "import nltk; nltk.download('sentiwordnet')"
+RUN python -c "import nltk; nltk.download('vader_lexicon')"
 RUN python -c "import nltk; nltk.download('averaged_perceptron_tagger')"
 RUN python -c "import nltk; nltk.download('maxent_ne_chunker')"
 RUN python -c "import nltk; nltk.download('words')"
