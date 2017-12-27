@@ -26,3 +26,5 @@ plotly
 ipython
 jupyter
 quandl
+dask[complete]
+blaze
